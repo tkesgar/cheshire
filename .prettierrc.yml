@@ -1,0 +1,9 @@
+plugins:
+  - "@prettier/plugin-oxc"
+  - prettier-plugin-organize-imports
+overrides:
+  # Always wrap lines in markdown files
+  - files: "**/*.md"
+    options:
+      proseWrap: always
+tailwindStylesheet: ./app/assets/styles/tailwind.css

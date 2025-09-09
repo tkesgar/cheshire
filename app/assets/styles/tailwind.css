@@ -1,0 +1,82 @@
+/*
+  Tailwind Preflight is disabled in favor of the Bootstrap Reboot reset.
+  Reference: https://tailwindcss.com/docs/preflight#disabling-preflight
+ */
+
+@layer theme, base, components, utilities;
+
+@import "tailwindcss/theme.css" layer(theme) prefix(tw);
+@import "tailwindcss/utilities.css" layer(utilities) prefix(tw);
+
+@theme {
+  --breakpoint-*: initial;
+
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --breakpoint-xxl: 1400px;
+}
+
+@theme inline {
+  --radius-*: initial;
+
+  --radius: var(--bs-border-radius);
+  --radius-sm: var(--bs-border-radius-sm);
+  --radius-lg: var(--bs-border-radius-lg);
+  --radius-xl: var(--bs-border-radius-xl);
+  --radius-xxl: var(--bs-border-radius-xxl);
+  --radius-pill: var(--bs-border-radius-pill);
+}
+
+@theme inline {
+  --color-*: initial;
+
+  --color-primary: var(--bs-primary);
+  --color-secondary: var(--bs-secondary);
+  --color-success: var(--bs-success);
+  --color-info: var(--bs-info);
+  --color-warning: var(--bs-warning);
+  --color-danger: var(--bs-danger);
+  --color-light: var(--bs-light);
+  --color-dark: var(--bs-dark);
+
+  --color-primary-text-emphasis: var(--bs-primary-text-emphasis);
+  --color-secondary-text-emphasis: var(--bs-secondary-text-emphasis);
+  --color-success-text-emphasis: var(--bs-success-text-emphasis);
+  --color-info-text-emphasis: var(--bs-info-text-emphasis);
+  --color-warning-text-emphasis: var(--bs-warning-text-emphasis);
+  --color-danger-text-emphasis: var(--bs-danger-text-emphasis);
+  --color-light-text-emphasis: var(--bs-light-text-emphasis);
+  --color-dark-text-emphasis: var(--bs-dark-text-emphasis);
+  --color-primary-bg-subtle: var(--bs-primary-bg-subtle);
+  --color-secondary-bg-subtle: var(--bs-secondary-bg-subtle);
+  --color-success-bg-subtle: var(--bs-success-bg-subtle);
+  --color-info-bg-subtle: var(--bs-info-bg-subtle);
+  --color-warning-bg-subtle: var(--bs-warning-bg-subtle);
+  --color-danger-bg-subtle: var(--bs-danger-bg-subtle);
+  --color-light-bg-subtle: var(--bs-light-bg-subtle);
+  --color-dark-bg-subtle: var(--bs-dark-bg-subtle);
+  --color-primary-border-subtle: var(--bs-primary-border-subtle);
+  --color-secondary-border-subtle: var(--bs-secondary-border-subtle);
+  --color-success-border-subtle: var(--bs-success-border-subtle);
+  --color-info-border-subtle: var(--bs-info-border-subtle);
+  --color-warning-border-subtle: var(--bs-warning-border-subtle);
+  --color-danger-border-subtle: var(--bs-danger-border-subtle);
+  --color-light-border-subtle: var(--bs-light-border-subtle);
+  --color-dark-border-subtle: var(--bs-dark-border-subtle);
+
+  --color-white: rgb(var(--bs-white-rgb));
+  --color-black: rgb(var(--bs-black-rgb));
+}
+
+@theme inline {
+  --font-*: initial;
+
+  --font-sans-serif: var(--bs-font-sans-serif);
+  --font-monospace: var(--bs-font-monospace);
+
+  /* Shorthands */
+  --font-sans: var(--bs-font-sans-serif);
+  --font-mono: var(--bs-font-monospace);
+}

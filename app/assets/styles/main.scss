@@ -1,0 +1,19 @@
+$primary: #6f42c1;
+
+/* prettier-ignore */
+$font-family-sans-serif:
+  // custom font
+  "Figtree Variable",
+  // system font stack
+  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif,
+  // emoji font stack
+  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+/* prettier-ignore */
+$font-family-monospace:
+  // custom font
+  "Kode Mono Variable",
+  // system font stack
+  SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+
+@import "bootstrap/scss/bootstrap";
