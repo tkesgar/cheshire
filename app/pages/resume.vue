@@ -1,5 +1,5 @@
 <template>
-  <BContainer class="tw:my-4">
+  <div>
     <h1 class="tw:text-center">Tito D. Kesumo Siregar</h1>
 
     <ul class="tw:!pl-0 tw:grid tw:grid-cols-2 tw:gap-1">
@@ -95,7 +95,7 @@
         </ul>
       </li>
     </ul>
-  </BContainer>
+  </div>
 </template>
 
 <script setup lang="ts">
