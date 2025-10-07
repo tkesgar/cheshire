@@ -9,6 +9,10 @@ draw comics.
 
 Check my resume here.
 
+<ClientOnly>
+  <Contact />
+</ClientOnly>
+
 ## Works
 
 All open source projects are available in [my GitHub][github-tkesgar].
@@ -25,10 +29,6 @@ Currently active projects (actively maintained/developed):
 [nuxt-elysia]: https://github.com/tkesgar/nuxt-elysia
 
 See a full list of my works [here](/works).
-
-<ClientOnly>
-  <Contact />
-</ClientOnly>
 
 ## Personal tech stack
 
