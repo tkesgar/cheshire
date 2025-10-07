@@ -7,14 +7,14 @@
         <Icon name="bi:pin-map" />
         Jakarta, Indonesia
       </li>
-      <li class="tw:flex tw:items-center tw:gap-2">
-        <Icon name="bi:envelope" />
-        <ClientOnly>
+      <ClientOnly>
+        <li class="tw:flex tw:items-center tw:gap-2">
+          <Icon name="bi:envelope" />
           <a :href="`mailto:${email}`" class="tw:!no-underline">
             {{ email }}
           </a>
-        </ClientOnly>
-      </li>
+        </li>
+      </ClientOnly>
       <li class="tw:flex tw:items-center tw:gap-2">
         <Icon name="bi:globe" />
         <NuxtLink external href="https://tkesgar.com" class="tw:!no-underline">

@@ -10,10 +10,12 @@
       <h2>Resume</h2>
       <p>Check my resume <NuxtLink to="/resume">here</NuxtLink>.</p>
 
-      <h2>Contact</h2>
-      <p>
-        Send me an email here: <a :href="`mailto:${email}`">{{ email }}</a>
-      </p>
+      <ClientOnly>
+        <h2>Contact</h2>
+        <p>
+          Send me an email here: <a :href="`mailto:${email}`">{{ email }}</a>
+        </p>
+      </ClientOnly>
     </template>
   </HomeContent>
 </template>
