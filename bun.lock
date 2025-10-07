@@ -4,34 +4,36 @@
     "": {
       "name": "nuxt-app",
       "dependencies": {
-        "@fontsource-variable/figtree": "^5.2.8",
-        "@fontsource-variable/kode-mono": "^5.2.6",
+        "@fontsource-variable/figtree": "^5.2.10",
+        "@fontsource-variable/kode-mono": "^5.2.8",
         "@nuxt/eslint": "1.9.0",
         "@vueuse/core": "^13.9.0",
         "bootstrap": "^5.3.8",
-        "bootstrap-vue-next": "^0.40.1",
-        "eslint": "^9.35.0",
-        "nuxt": "^4.1.1",
-        "vue": "^3.5.21",
+        "bootstrap-vue-next": "^0.40.5",
+        "eslint": "^9.37.0",
+        "nuxt": "^4.1.2",
+        "vue": "^3.5.22",
         "vue-router": "^4.5.1",
       },
       "devDependencies": {
-        "@bootstrap-vue-next/nuxt": "^0.40.1",
+        "@bootstrap-vue-next/nuxt": "^0.40.5",
         "@iconify-json/bi": "^1.2.6",
+        "@iconify-json/simple-icons": "^1.2.54",
         "@nuxt/icon": "^2.0.0",
-        "@nuxtjs/mdc": "^0.17.3",
+        "@nuxtjs/mdc": "^0.17.4",
         "@prettier/plugin-oxc": "^0.0.4",
-        "@tailwindcss/vite": "^4.1.13",
+        "@tailwindcss/vite": "^4.1.14",
         "@vueuse/nuxt": "^13.9.0",
         "eslint-config-prettier": "^10.1.8",
         "husky": "^9.1.7",
-        "lint-staged": "^16.1.6",
+        "lint-staged": "^16.2.3",
+        "markdown-it-prism": "^3.0.0",
         "prettier": "^3.6.2",
-        "prettier-plugin-organize-imports": "^4.2.0",
-        "sass-embedded": "^1.92.1",
-        "unplugin-vue-markdown": "^29.1.0",
-        "vue-tsc": "^3.0.6",
-        "wrangler": "^4.34.0",
+        "prettier-plugin-organize-imports": "^4.3.0",
+        "sass-embedded": "^1.93.2",
+        "unplugin-vue-markdown": "^29.2.0",
+        "vue-tsc": "^3.1.0",
+        "wrangler": "^4.42.0",
       },
     },
   },
@@ -218,6 +220,8 @@
     "@humanwhocodes/retry": ["@humanwhocodes/retry@0.4.3", "", {}, "sha512-bV0Tgo9K4hfPCek+aMAn81RppFKv2ySDQeMoSZuvTASywNTnVJCArCZE2FWqpvIatKu7VMRLWlR1EazvVhDyhQ=="],
 
     "@iconify-json/bi": ["@iconify-json/bi@1.2.6", "", { "dependencies": { "@iconify/types": "*" } }, "sha512-fWfLr1/+DJDe8+rIUXxMwvmWBZFlxRtM59sYnrezJ2xX87QKyXVw3QuforJ4kF2Orrz85J+JTRG6305vaJ7flA=="],
+
+    "@iconify-json/simple-icons": ["@iconify-json/simple-icons@1.2.54", "", { "dependencies": { "@iconify/types": "*" } }, "sha512-OQQYl8yC5j3QklZOYnK31QYe5h47IhyCoxSLd53f0e0nA4dgi8VOZS30SgSAbsecQ+S0xlGJMjXIHTIqZ+ML3w=="],
 
     "@iconify/collections": ["@iconify/collections@1.0.592", "", { "dependencies": { "@iconify/types": "*" } }, "sha512-Lu/ztAD4iqvRZ8b7zNqh2lnwEFQ/uzrKfgHpuPOzNPeTKb5Kj+6EFPfUpzjWd//CusGRaWbHyaBNdPKti0wlMQ=="],
 
@@ -1475,6 +1479,8 @@
 
     "markdown-it-async": ["markdown-it-async@2.2.0", "", { "dependencies": { "@types/markdown-it": "^14.1.2", "markdown-it": "^14.1.0" } }, "sha512-sITME+kf799vMeO/ww/CjH6q+c05f6TLpn6VOmmWCGNqPJzSh+uFgZoMB9s0plNtW6afy63qglNAC3MhrhP/gg=="],
 
+    "markdown-it-prism": ["markdown-it-prism@3.0.0", "", { "dependencies": { "prismjs": "1.30.0" } }, "sha512-M0LQsbVzjbzufV95nYdtbs99Sm/8f7zLnqFblb5yQZtFTGLM+y6hxMZ8BdujY3FFqVvTbnZ52/uoicQUqZUYbg=="],
+
     "markdown-table": ["markdown-table@3.0.4", "", {}, "sha512-wiYz4+JrLyb/DqW2hkFJxP7Vd7JuTDm77fvbM8VfEQdmSMqcImWeeRbHwZjBjIFki/VaMK2BhFi7oUUZeM5bqw=="],
 
     "mdast-util-find-and-replace": ["mdast-util-find-and-replace@3.0.2", "", { "dependencies": { "@types/mdast": "^4.0.0", "escape-string-regexp": "^5.0.0", "unist-util-is": "^6.0.0", "unist-util-visit-parents": "^6.0.0" } }, "sha512-Tmd1Vg/m3Xz43afeNxDIhWRtFZgM2VLyaf4vSTYwudTyeuTneoL3qtWMA5jeLyz/O1vDJmmV4QuScFCA2tBPwg=="],
@@ -1802,6 +1808,8 @@
     "prettier-plugin-organize-imports": ["prettier-plugin-organize-imports@4.3.0", "", { "peerDependencies": { "prettier": ">=2.0", "typescript": ">=2.9", "vue-tsc": "^2.1.0 || 3" }, "optionalPeers": ["vue-tsc"] }, "sha512-FxFz0qFhyBsGdIsb697f/EkvHzi5SZOhWAjxcx2dLt+Q532bAlhswcXGYB1yzjZ69kW8UoadFBw7TyNwlq96Iw=="],
 
     "pretty-bytes": ["pretty-bytes@7.1.0", "", {}, "sha512-nODzvTiYVRGRqAOvE84Vk5JDPyyxsVk0/fbA/bq7RqlnhksGpset09XTxbpvLTIjoaF7K8Z8DG8yHtKGTPSYRw=="],
+
+    "prismjs": ["prismjs@1.30.0", "", {}, "sha512-DEvV2ZF2r2/63V+tK8hQvrR2ZGn10srHbXviTlcv7Kpzw8jWiNTqbVgjO3IY8RxrrOUF8VPMQQFysYYYv0YZxw=="],
 
     "process": ["process@0.11.10", "", {}, "sha512-cdGef/drWFoydD1JsMzuFf8100nZl+GT+yacc2bEced5f9Rjk4z+WtFUTBu9PhOi9j/jfmBPu0mMEY4wIdAF8A=="],
 

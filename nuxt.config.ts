@@ -1,5 +1,6 @@
 import vueMarkdown from "unplugin-vue-markdown/vite";
 import tailwindcss from "@tailwindcss/vite";
+import markdownItPrism from "markdown-it-prism";
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
@@ -28,6 +29,9 @@ export default defineNuxtConfig({
     plugins: [
       vueMarkdown({
         include: /\.md(\?.+)?$/,
+        markdownItSetup(md) {
+          md.use(markdownItPrism);
+        },
       }),
       tailwindcss(),
     ],
@@ -47,5 +51,12 @@ export default defineNuxtConfig({
   extensions: [".md"],
   experimental: {
     entryImportMap: true,
+    inlineRouteRules: true,
   },
+  css: [
+    "@fontsource-variable/figtree",
+    "@fontsource-variable/kode-mono",
+    "~/assets/styles/main.scss",
+    "~/assets/styles/tailwind.css",
+  ],
 });
