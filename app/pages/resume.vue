@@ -47,7 +47,7 @@
 
     <h3 class="tw:flex tw:items-end tw:gap-4">
       Staff, Nusaimoe
-      <small class="tw:text-secondary tw:ml-auto tw:flex-none">2017-2020</small>
+      <small class="tw:text-secondary tw:ml-auto tw:flex-none">2017-2019</small>
     </h3>
 
     <WorkNusaimoe />
