@@ -7,7 +7,7 @@ draw comics.
 
 ## Resume
 
-Check my resume here.
+Check my resume <NuxtLink to="/resume">here</NuxtLink>.
 
 <ClientOnly>
   <Contact />
@@ -28,7 +28,7 @@ Currently active projects (actively maintained/developed):
 [strformat]: https://github.com/tkesgar/strformat
 [nuxt-elysia]: https://github.com/tkesgar/nuxt-elysia
 
-See a full list of my works [here](/works).
+See a full list of my works <NuxtLink to="/works">here</NuxtLink>.
 
 ## Personal tech stack
 
@@ -97,7 +97,7 @@ public communications) or is not mine (fake accounts, bots, or impersonators).
     </NuxtLink>
   </li>
   <li>
-    <NuxtLink href="https://www.instagram.com/t.kesgar/" external>
+    <NuxtLink href="https://www.linkedin.com/in/tkesgar/" external>
       <Icon name="simple-icons:linkedin" /> LinkedIn: tkesgar
     </NuxtLink>
   </li>
