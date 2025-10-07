@@ -5,13 +5,7 @@ I am a software engineer currently living in Jakarta.
 When I am not working on computer code, I play video games, write stories, and
 draw comics.
 
-## Resume
-
-Check my resume <NuxtLink to="/resume">here</NuxtLink>.
-
-<ClientOnly>
-  <Contact />
-</ClientOnly>
+<slot name="resume-contact" />
 
 ## Works
 
@@ -28,7 +22,7 @@ Currently active projects (actively maintained/developed):
 [strformat]: https://github.com/tkesgar/strformat
 [nuxt-elysia]: https://github.com/tkesgar/nuxt-elysia
 
-See a full list of my works <NuxtLink to="/works">here</NuxtLink>.
+See a full list of my works <a to="/works">here</a>.
 
 ## Personal tech stack
 
@@ -87,44 +81,44 @@ public communications) or is not mine (fake accounts, bots, or impersonators).
 
 <ul>
   <li>
-    <NuxtLink href="https://x.com/tkesgar" external>
+    <a href="https://x.com/tkesgar">
       <Icon name="simple-icons:twitter" /> Twitter: @tkesgar
-    </NuxtLink>
+    </a>
   </li>
   <li>
-    <NuxtLink href="https://www.instagram.com/t.kesgar/" external>
+    <a href="https://www.instagram.com/t.kesgar/">
       <Icon name="simple-icons:instagram" /> Instagram: t.kesgar
-    </NuxtLink>
+    </a>
   </li>
   <li>
-    <NuxtLink href="https://www.linkedin.com/in/tkesgar/" external>
+    <a href="https://www.linkedin.com/in/tkesgar/">
       <Icon name="simple-icons:linkedin" /> LinkedIn: tkesgar
-    </NuxtLink>
+    </a>
   </li>
   <li>
-    <NuxtLink href="https://github.com/tkesgar" external>
+    <a href="https://github.com/tkesgar">
       <Icon name="simple-icons:github" /> GitHub: tkesgar
-    </NuxtLink>
+    </a>
   </li>
   <li>
-    <NuxtLink href="https://gitlab.com/tkesgar" external>
+    <a href="https://gitlab.com/tkesgar">
       <Icon name="simple-icons:gitlab" /> GitLab: tkesgar
-    </NuxtLink>
+    </a>
   </li>
   <li>
-    <NuxtLink href="https://www.youtube.com/@ggtynonan" external>
+    <a href="https://www.youtube.com/@ggtynonan">
       <Icon name="simple-icons:youtube" /> YouTube: @ggtynonan
-    </NuxtLink>
+    </a>
   </li>
   <li>
-    <NuxtLink href="https://www.twitch.tv/nonan99" external>
+    <a href="https://www.twitch.tv/nonan99">
       <Icon name="simple-icons:twitch" /> Twitch: nonan99
-    </NuxtLink>
+    </a>
   </li>
   <li>
-    <NuxtLink href="https://steamcommunity.com/id/nonann" external>
+    <a href="https://steamcommunity.com/id/nonann">
       <Icon name="simple-icons:steam" /> Steam: nonann
-    </NuxtLink>
+    </a>
   </li>
 </ul>
 
@@ -142,11 +136,6 @@ Check out my Steam profile [here][steam-tkesgar]. I also occasionally stream on
 
 [steam-tkesgar]: https://steamcommunity.com/id/nonann
 [youtube-tkesgar]: https://www.youtube.com/@ggtynonan
-
-<script setup lang="ts">
-import { ClientOnly, NuxtLink } from '#components'
-import Contact from './contact.md'
-</script>
 
 <style scoped>
 :deep(a) {
