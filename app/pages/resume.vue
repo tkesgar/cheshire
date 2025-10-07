@@ -7,14 +7,14 @@
         <Icon name="bi:pin-map" />
         Jakarta, Indonesia
       </li>
-      <ClientOnly>
+      <template v-if="isClientOnly">
         <li class="tw:flex tw:items-center tw:gap-2">
           <Icon name="bi:envelope" />
           <a :href="`mailto:${email}`" class="tw:!no-underline">
             {{ email }}
           </a>
         </li>
-      </ClientOnly>
+      </template>
       <li class="tw:flex tw:items-center tw:gap-2">
         <Icon name="bi:globe" />
         <NuxtLink external href="https://tkesgar.com" class="tw:!no-underline">
@@ -103,5 +103,6 @@ import WorkBukalapak from "~/assets/content/resume/work-bukalapak.md";
 import WorkInternHris from "~/assets/content/resume/work-intern-hris.md";
 import WorkNusaimoe from "~/assets/content/resume/work-nusaimoe.md";
 
+const isClientOnly = useClientOnly();
 const email = atob("dC5rZXNnYXJAb3V0bG9vay5jb20=");
 </script>
