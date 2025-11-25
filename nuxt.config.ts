@@ -53,10 +53,5 @@ export default defineNuxtConfig({
     entryImportMap: true,
     inlineRouteRules: true,
   },
-  css: [
-    "@fontsource-variable/figtree",
-    "@fontsource-variable/kode-mono",
-    "~/assets/styles/main.scss",
-    "~/assets/styles/tailwind.css",
-  ],
+  css: ["~/assets/styles/main.scss", "~/assets/styles/tailwind.css"],
 });
