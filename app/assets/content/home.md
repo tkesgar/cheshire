@@ -22,7 +22,7 @@ Currently active projects (actively maintained/developed):
 [strformat]: https://github.com/tkesgar/strformat
 [nuxt-elysia]: https://github.com/tkesgar/nuxt-elysia
 
-See a full list of my works <a to="/works">here</a>.
+See a full list of my works <NuxtLink to="/works">here</NuxtLink>.
 
 ## Personal tech stack
 
@@ -136,6 +136,10 @@ Check out my Steam profile [here][steam-tkesgar]. I also occasionally stream on
 
 [steam-tkesgar]: https://steamcommunity.com/id/nonann
 [youtube-tkesgar]: https://www.youtube.com/@ggtynonan
+
+<script setup>
+import { NuxtLink } from '#components'
+</script>
 
 <style scoped>
 :deep(a) {
